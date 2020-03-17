@@ -1,0 +1,37 @@
+{
+    "name": "nthmedia/craft-bootstrap-grid",
+    "description": "Bootstrap Grid for Matrix Blocks (Craft CMS 3.x)",
+    "type": "craft-plugin",
+    "version": "0.1",
+    "keywords": [
+        "bootstrap",
+        "grid"
+    ],
+    "support": {
+        "docs": "https://github.com/nthmedia/craft-bootstrap-grid",
+        "issues": "https://github.com/nthmedia/craft-bootstrap-grid/issues"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "NTH media",
+            "homepage": "https://nthmedia.nl"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "nthmedia\\bootstrapgrid\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Bootstrap Grid",
+        "handle": "bootstrap-grid",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://github.com/nthmedia/craft-bootstrap-grid/CHANGELOG.md",
+        "class": "nthmedia\\bootstrapgrid\\BootstrapGrid"
+    }
+}

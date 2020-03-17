@@ -1,0 +1,44 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Bootstrap Grid plugin for Craft CMS 3.x
+ *
+ * Bootstrap Grid Field Input
+ *
+ * @author    NTH media
+ * @copyright Copyright (c) 2020 NTH media
+ * @link      https://nthmedia.nl
+ * @package   BootstrapGrid
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.select({
+    id: name,
+    class: 'bootstrap-grid-col-field',
+    name: name ~ '[col]',
+    value: value.col,
+    options: {
+        12: 'col-12: 100%',
+        9: 'col-9: 75%',
+        6: 'col-6: 50%',
+        3: 'col-3: 25%',
+    }
+}) }}
+
+{{ forms.field({
+        label: 'Offset',
+    },
+    forms.select({
+        id: name,
+        class: 'bootstrap-grid-offset-field',
+        name: name ~ '[offset]',
+        value: value.offset,
+        options: {
+            0: '0',
+            3: '1/4: 25%',
+        }
+    }))
+}}

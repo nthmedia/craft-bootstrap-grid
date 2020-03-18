@@ -32,19 +32,6 @@ use craft\helpers\Json;
  */
 class BootstrapGrid extends Field
 {
-    // Public Properties
-    // =========================================================================
-
-    /**
-     * Some attribute
-     *
-     * @var string
-     */
-    public $googleApiKey = null;
-
-    // Static Methods
-    // =========================================================================
-
     /**
      * Returns the display name of this class.
      *
@@ -57,27 +44,6 @@ class BootstrapGrid extends Field
 
     // Public Methods
     // =========================================================================
-
-    /**
-     * Returns the validation rules for attributes.
-     *
-     * Validation rules are used by [[validate()]] to check if attribute values are valid.
-     * Child classes may override this method to declare different validation rules.
-     *
-     * More info: http://www.yiiframework.com/doc-2.0/guide-input-validation.html
-     *
-     * @return array
-     */
-    public function rules()
-    {
-        $rules = parent::rules();
-//        $rules = array_merge($rules, [
-//            ['googleApiKey', 'required'],
-//            ['googleApiKey', 'string'],
-//            ['googleApiKey', 'default', 'value' => ''],
-//        ]);
-        return $rules;
-    }
 
     /**
      * Returns the column type that this field should get within the content table.
